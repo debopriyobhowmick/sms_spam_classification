@@ -32,7 +32,6 @@ This notebook section discusses the end-to-end methodology used to create this c
 Given the above data we want to predict if a given sms is **spam** or not (aslo called **ham**).
 One way to think about this problem is using Bayes' Theorem. In terms of probability we want to find out the $P(Spam | SMS)$
 
-\begin{align}
-P(Spam | SMS) = \frac{P(Spam) P(SMS|Spam) } {P(Spam) P(SMS|Spam) + P(Ham) P(SMS|Ham)}
-\end{align}
+
+P(Spam | SMS) = {P(Spam) /P(SMS|Spam) } {P(Spam) P(SMS|Spam) + P(Ham) P(SMS|Ham)}
 where $P(Spam)$ and $P(Ham)$is the prior probability of an sms being spam, which can be directly calculated from the count of spam/ham messages by the count of total messages. This is calculated below.
